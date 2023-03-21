@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>{{send.subject}}</h1>
+    <p>{{send.receiver}}</p>
+    <p>{{send.body}}</p>
+    <p>{{send.created_at}}</p>
+<a href="{% url 'edit' send.pk %}">Edit Message</a>
+<a href="{% url 'delete' send.pk %}"></a>
+</body>
+</html>
